@@ -1,0 +1,207 @@
+:root {
+    --color-grey: #eee;
+}
+
+img.navbar-brand {
+    width: 40%;
+}
+
+.navbar-menu-container {
+    display: grid !important;
+    grid-template-columns: 20% auto 20%;
+}
+
+.navbar-menu-container.logged-out {
+    display: flex !important;
+}
+
+.logout-link {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.school-logo {
+    text-align: center;
+}
+
+.host-col {
+    padding: 20px 0;
+    background: var(--color-grey);
+    margin-bottom: 30px;
+}
+
+#cover-section .cover-col {
+    padding: 20px;
+    border: 1px solid var(--color-grey);
+}
+
+#cover-section .cover-col:first-child {
+    border-right-color: transparent;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#videoWorksheetOffcanvas .list-group-item:hover {
+    background: #e6e6e6;
+    transition: 0.3s linear;
+}
+
+#worksheetModal .modal-header {
+    background: #38383d !important;
+    color: white;
+}
+
+#worksheetModal .modal-header .btn-close {
+    filter: invert(1);
+}
+
+.worksheet-iframe {
+    height: 100% !important;
+}
+
+#worksheetModal .modal-body {
+    padding: 0;
+}
+
+.mfp-wrap {
+    z-index: 9999 !important;
+}
+
+.mfp-content {
+    height: 80%;
+    text-align: center;
+    width: auto !important;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 0 20px;
+    background: #000;
+    color: #fff;
+}
+
+.popup-header .popup-title {
+    margin-bottom: 0;
+}
+
+.mfp-content .close-popup {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 0;
+}
+
+#worksheetModal .modal-body iframe {
+    width: 100vw !important;
+}
+
+.audio-file {
+    margin: 10px 0;
+}
+
+.audio-play-icon {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.welcome-img img {
+    max-height: 80vh !important;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.home-cover-img {
+    /* min-height: 330px; */
+    max-height: 350px;
+    /* object-fit: contain; */
+    /* object-position: center; */
+    /* width: 100% !important; */
+    min-width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-menu-container .navbar-brand {
+        width: 50%;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .navbar-menu-container.logged-out .navbar-brand img {
+        width: 50%;
+    }
+
+    .back-btn {
+        /* display: none; */
+    }
+
+    .video-iframe {
+        width: 100% !important;
+    }
+    iframe.worksheet-iframe {
+        width: 100% !important;
+    }
+    .mfp-content {
+        height: 100%;
+        width: 100% !important;
+    }
+    .mfp-container {
+        padding: 0 !important;
+    }
+    .video-iframe {
+        height: 100% !important;
+    }
+    .navbar .navbar-brand {
+        text-align: center;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .navbar .navbar-brand .w-15 {
+        width: 30% !important;
+    }
+    .home-cover-img {
+        /* object-fit: contain; */
+        object-position: center;
+    }
+    .navbar-brand {
+        margin: 0 !important;
+    }
+    .navbar-brand .w-50 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .home-cover-img {
+        object-fit: contain;
+    }
+  }
